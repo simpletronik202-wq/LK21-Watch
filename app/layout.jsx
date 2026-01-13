@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: 'LK21 | Complete Movie & TV Series Database',
     description: 'Your ultimate destination for movies, TV series, actor profiles, and streaming information. Explore genres, yearly archives, and top rankings.',
-    url: 'https://LK21Movie.netlify.app',
+    url: 'https://lk21-watch.vercel.app',
     siteName: 'LK21',
     images: [
       {
@@ -52,10 +52,10 @@ export default function RootLayout({ children }) {
               "@type": "MovieDatabase",
               "name": "LK21",
               "description": "Complete movie and TV series database with streaming information",
-              "url": "https://LK21Movie.netlify.app",
+              "url": "https://lk21-watch.vercel.app",
               "logo": "https://live.staticflickr.com/65535/55031700113_48357852dd_b.jpg",
               "sameAs": [
-                "https://LK21Movie.netlify.app"
+                "https://lk21-watch.vercel.app"
               ]
             })
           }}
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
             </main>
             <footer className="w-full max-w-7xl mx-auto px-4 py-8">
               {/* Tempatkan div Native Banner di sini, sebelum Footer */}
-              <div id="container-c688e187bdc29aee0edb83d877a2dcd8"></div>
+              <div id="container-ad1ee1816ddebc11a35ac98d10fb7142"></div>
               <Footer />
             </footer>
           </div>

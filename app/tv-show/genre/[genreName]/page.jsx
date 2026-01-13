@@ -40,17 +40,17 @@ export async function generateMetadata({ params }) {
 
   const title = genre?.name || 'Unknown';
   
-  const pageUrl = `https://lk21movie.netlify.app/tv-show/genre/${genreName}`;
+  const pageUrl = `https://lk21-watch.vercel.app/tv-show/genre/${genreName}`;
   const imageUrl = 'https://live.staticflickr.com/65535/55031700113_48357852dd_b.jpg';
 
   return {
-    title: `TubiMovie - ${title} TV Series`,
-    description: `Find and watch the best ${title} TV series for free on TubiMovie.`,
+    title: `LK21 - ${title} TV Series`,
+    description: `Find and watch the best ${title} TV series for free on LK21.`,
     openGraph: {
-      title: `TubiMovie - ${title} TV Series`,
-      description: `Find and watch the best ${title} TV series for free on TubiMovie.`,
+      title: `LK21 - ${title} TV Series`,
+      description: `Find and watch the best ${title} TV series for free on LK21.`,
       url: pageUrl,
-      siteName: 'TubiMovie',
+      siteName: 'LK21',
       images: [
         {
           url: imageUrl,
@@ -66,8 +66,8 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       site: '@WatchStream123',
       creator: '@WatchStream123',
-      title: `TubiMovie - ${title} TV Series`,
-      description: `Find and watch the best ${title} TV series for free on TubiMovie.`,
+      title: `LK21 - ${title} TV Series`,
+      description: `Find and watch the best ${title} TV series for free on LK21.`,
       images: [imageUrl],
     },
     other: {
