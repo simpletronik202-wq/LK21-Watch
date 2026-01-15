@@ -2,47 +2,20 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaHome, FaFilm, FaTv, FaSearch, FaStar, FaUsers, FaGlobe, FaUser, FaCalendar, FaTrophy, FaDownload, FaMobileAlt, FaApple, FaWindows } from 'react-icons/fa';
-import AdsterraSmartLink from '../components/ads/AdsterraSmartLink';
+import { FaHome, FaFilm, FaTv, FaSearch, FaStar, FaUsers, FaGlobe, FaUser, FaCalendar, FaTrophy } from 'react-icons/fa';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-slate-900 text-gray-300">
       {/* Hero Section dengan Optimasi SEO */}
-      <div className="bg-gradient-to-b from-purple-900/50 to-slate-900 py-16 relative overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-purple-500/10"></div>
-        
-        <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="bg-gradient-to-b from-purple-900/50 to-slate-900 py-16">
+        <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-3 text-orange-400">
             LK21 Ultimate Movie & TV Series Database Your Complete Cinema Guide
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Your comprehensive guide to 10,000+ movies, 5,000+ TV series, actor profiles, genre pages, and streaming information.
           </p>
-          
-          {/* Premium App CTA Section */}
-          <div className="bg-gradient-to-r from-orange-900/30 to-purple-900/30 rounded-xl p-6 mb-8 max-w-3xl mx-auto backdrop-blur-sm">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="text-left">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  ⚡ Premium Streaming App
-                </h3>
-                <p className="text-gray-300 mb-2">
-                  <span className="text-green-400 font-semibold">✓</span> No Ads • <span className="text-green-400 font-semibold">✓</span> 4K Quality • <span className="text-green-400 font-semibold">✓</span> Offline Viewing
-                </p>
-                <div className="flex items-center gap-4 text-sm text-gray-400">
-                  <span>⭐ 4.8/5 (10K+ reviews)</span>
-                  <span>📦 45 MB</span>
-                  <span>👥 1M+ Downloads</span>
-                </div>
-              </div>
-              <AdsterraSmartLink variant="success" className="whitespace-nowrap">
-                <FaDownload /> Download Free
-              </AdsterraSmartLink>
-            </div>
-          </div>
-          
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Link href="/movie/popular" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center gap-2">
               <FaFilm /> Browse Movies
@@ -87,27 +60,6 @@ export default function About() {
                   Our database features an extensive collection of <strong>over 10,000 movies</strong> and <strong>5,000+ TV series</strong>, each with complete metadata including cast and crew details, production information, technical specifications, awards and nominations, box office performance, critical reception, and viewer ratings. We continuously update our database with new releases, ensuring our users have access to the most current information in the entertainment industry.
                 </p>
               </div>
-              
-              {/* Download Section 1 */}
-              <div className="mt-12 bg-gradient-to-r from-blue-900/20 to-purple-900/20 p-6 rounded-xl max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  🎬 Stream Movies Faster with Our App
-                </h3>
-                <p className="text-gray-300 mb-6">
-                  Get 5x faster streaming, background playback, and exclusive content
-                </p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <AdsterraSmartLink variant="primary">
-                    <FaMobileAlt /> Android APK (v2.5.1)
-                  </AdsterraSmartLink>
-                  <AdsterraSmartLink variant="secondary">
-                    <FaApple /> iOS Version
-                  </AdsterraSmartLink>
-                </div>
-                <p className="text-gray-400 text-sm mt-4">
-                  🔥 Limited Time: Free premium trial for 7 days
-                </p>
-              </div>
             </div>
           </section>
 
@@ -123,21 +75,6 @@ export default function About() {
               <p>
                 Welcome to <strong>LK21</strong>, the ultimate destination for movie enthusiasts and television series fans. Our platform represents the culmination of years of data collection, curation, and user experience optimization, designed to serve as the most reliable and comprehensive online resource for cinematic information. Whether you're researching a classic film, discovering new TV shows, or exploring actor filmographies, our database provides unparalleled depth and accuracy.
               </p>
-
-              {/* Download Section 2 */}
-              <div className="my-8 p-6 bg-gradient-to-r from-green-900/20 to-emerald-900/20 rounded-xl">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div>
-                    <h4 className="text-xl font-bold text-white mb-2">📱 Mobile Experience</h4>
-                    <p className="text-gray-300">
-                      Download our mobile app for better viewing experience
-                    </p>
-                  </div>
-                  <AdsterraSmartLink variant="success" className="whitespace-nowrap">
-                    <FaDownload /> Get Mobile App
-                  </AdsterraSmartLink>
-                </div>
-              </div>
 
               <h3 className="text-2xl font-semibold text-blue-300 mb-4">Comprehensive Movie Database Features</h3>
               
@@ -186,7 +123,7 @@ export default function About() {
               </p>
 
               <p>
-                The archives include special sections for significant years in cinema history, such as 1939 (often called "Hollywood's Greatest Year"), 1975 (the birth of the modern blockbuster), and 1999 (a landmark year for independent and mainstream cinema). Each archive page includes historical context, notable trends, award winners, dan cultural impact analysis.
+                The archives include special sections for significant years in cinema history, such as 1939 (often called "Hollywood's Greatest Year"), 1975 (the birth of the modern blockbuster), and 1999 (a landmark year for independent and mainstream cinema). Each archive page includes historical context, notable trends, award winners, and cultural impact analysis.
               </p>
 
               <h3 className="text-2xl font-semibold text-blue-300 mb-4">Ratings, Rankings, and User Reviews</h3>
@@ -208,21 +145,6 @@ export default function About() {
               <p>
                 The streaming guide includes price comparisons, quality options (SD, HD, 4K), availability dates, and expiration warnings. We also provide information on physical media availability (DVD, Blu-ray, 4K UHD) and digital purchase options across various platforms.
               </p>
-
-              {/* Download Section 3 */}
-              <div className="my-8 p-6 bg-gradient-to-r from-yellow-900/20 to-orange-900/20 rounded-xl">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div>
-                    <h4 className="text-xl font-bold text-white mb-2">💻 Desktop Application</h4>
-                    <p className="text-gray-300">
-                      Enhanced experience with our desktop app for Windows
-                    </p>
-                  </div>
-                  <AdsterraSmartLink variant="warning">
-                    <FaWindows /> Windows Desktop App
-                  </AdsterraSmartLink>
-                </div>
-              </div>
 
               <h3 className="text-2xl font-semibold text-blue-300 mb-4">Advanced Search and Discovery Tools</h3>
               
@@ -284,29 +206,6 @@ export default function About() {
                 With our commitment to accuracy, comprehensiveness, and user experience, LK21 continues to set the standard for online movie databases. Join our growing community of film enthusiasts and discover why we're recognized as the premier destination for cinematic information and discovery.
               </p>
             </div>
-            
-            {/* Final Download CTA */}
-            <div className="mt-12 bg-gradient-to-r from-purple-900/30 to-pink-900/30 p-8 rounded-xl text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                🚀 Ready to Experience Premium Streaming?
-              </h3>
-              <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                Download our app now and get access to exclusive features, faster streaming, and ad-free experience
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <AdsterraSmartLink variant="primary" className="text-lg px-8 py-4">
-                  <FaDownload className="inline mr-2" />
-                  Download Premium App (FREE)
-                </AdsterraSmartLink>
-                <AdsterraSmartLink variant="secondary" className="text-lg px-8 py-4">
-                  <FaMobileAlt className="inline mr-2" />
-                  Android APK Download
-                </AdsterraSmartLink>
-              </div>
-              <p className="text-gray-400 text-sm mt-6">
-                ⚡ Instant Download • 🔒 100% Safe • 📱 Compatible with all devices
-              </p>
-            </div>
           </section>
 
           {/* Features Grid */}
@@ -346,99 +245,119 @@ export default function About() {
                 <p className="text-gray-400 text-justify">Find content by multiple criteria and sophisticated filters for precise discovery</p>
               </div>
             </div>
-            
-            {/* App Download Banner */}
-            <div className="mt-12 bg-gradient-to-r from-blue-900/20 to-cyan-900/20 p-8 rounded-xl">
-              <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-                <div className="text-center lg:text-left">
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    📲 Get the Ultimate Movie Experience
-                  </h3>
-                  <p className="text-gray-300 mb-4">
-                    Our mobile app offers exclusive features you won't find on the website
+          </section>
+
+          {/* Detailed Sections dengan text-justify */}
+          <section className="mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-orange-300">Complete Movie Information Database</h3>
+                <div className="text-gray-400 mb-4 text-justify space-y-3">
+                  <p>
+                    Access comprehensive details for every movie in our extensive database with complete metadata, production information, and streaming availability across all major platforms.
                   </p>
-                  <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                    <div className="flex items-center gap-2 text-sm">
-                      <span className="text-green-400">✓</span>
-                      <span>Offline Viewing</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm">
-                      <span className="text-green-400">✓</span>
-                      <span>Background Play</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm">
-                      <span className="text-green-400">✓</span>
-                      <span>Higher Quality</span>
-                    </div>
-                  </div>
+                  <ul className="space-y-2 ml-4">
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Complete cast and crew information with role details and biographical data</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>User reviews and professional critic ratings aggregated from multiple sources</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Streaming platform availability across subscription, rental, and free services</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Trailers, teasers, behind-the-scenes footage, and official video content</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Similar movie recommendations and algorithmically generated related content</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Release dates, box office data, production budgets, and financial performance</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Technical specifications including runtime, aspect ratio, color process, and sound</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Awards, nominations, festival screenings, and critical reception analysis</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <AdsterraSmartLink variant="success" className="px-8 py-4">
-                    <FaMobileAlt className="inline mr-2" />
-                    Download App
-                  </AdsterraSmartLink>
-                  <AdsterraSmartLink variant="warning" className="px-8 py-4">
-                    <FaWindows className="inline mr-2" />
-                    PC Version
-                  </AdsterraSmartLink>
-                </div>
+                <Link href="/movie/popular" className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  <FaFilm /> Explore Complete Movie Database
+                </Link>
+              </div>
+              <div className="bg-gray-700/30 p-6 rounded-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                  alt="Comprehensive movie database interface with detailed film information and streaming options"
+                  className="rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </section>
 
-          {/* Mega Download Section */}
-          <section className="mb-16 bg-gradient-to-r from-orange-900/30 via-red-900/30 to-purple-900/30 p-8 rounded-xl">
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                ⚡ Download All-in-One Movie App
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Everything you need for the ultimate movie experience in one powerful application
-              </p>
-              
-              <div className="grid md:grid-cols-3 gap-6 mb-10">
-                <div className="bg-gray-800/50 p-6 rounded-xl">
-                  <div className="text-4xl mb-4">🎬</div>
-                  <h4 className="text-xl font-bold mb-3">Stream Unlimited</h4>
-                  <p className="text-gray-400">Access 10,000+ movies and 5,000+ TV series</p>
-                </div>
-                <div className="bg-gray-800/50 p-6 rounded-xl">
-                  <div className="text-4xl mb-4">🚀</div>
-                  <h4 className="text-xl font-bold mb-3">Premium Features</h4>
-                  <p className="text-gray-400">No ads, 4K quality, offline viewing</p>
-                </div>
-                <div className="bg-gray-800/50 p-6 rounded-xl">
-                  <div className="text-4xl mb-4">🎁</div>
-                  <h4 className="text-xl font-bold mb-3">Free Download</h4>
-                  <p className="text-gray-400">Completely free with premium trial</p>
-                </div>
+          <section className="mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-gray-700/30 p-6 rounded-xl order-2 lg:order-1">
+                <img
+                  src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                  alt="Actor profiles and filmography database with career information and movie credits"
+                  className="rounded-lg shadow-lg"
+                />
               </div>
-              
-              <div className="flex flex-wrap justify-center gap-4">
-                <AdsterraSmartLink variant="success" className="px-10 py-5 text-lg">
-                  <FaDownload className="inline mr-2" />
-                  DOWNLOAD NOW (FREE)
-                </AdsterraSmartLink>
-                <AdsterraSmartLink variant="warning" className="px-10 py-5 text-lg">
-                  <FaMobileAlt className="inline mr-2" />
-                  ANDROID APK
-                </AdsterraSmartLink>
-                <AdsterraSmartLink variant="primary" className="px-10 py-5 text-lg">
-                  <FaApple className="inline mr-2" />
-                  iOS VERSION
-                </AdsterraSmartLink>
-              </div>
-              
-              <div className="mt-8 flex flex-wrap justify-center gap-6 text-gray-400">
-                <span className="flex items-center gap-2">
-                  <span className="text-green-400">✓</span> 100% Safe Download
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="text-green-400">✓</span> No Registration Required
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="text-green-400">✓</span> Works on All Devices
-                </span>
+              <div className="order-1 lg:order-2">
+                <h3 className="text-2xl font-bold mb-4 text-orange-300">Actor & People Profiles Database</h3>
+                <div className="text-gray-400 mb-4 text-justify space-y-3">
+                  <p>
+                    Discover detailed information about your favorite actors, directors, and industry professionals with comprehensive career data and filmography listings.
+                  </p>
+                  <ul className="space-y-2 ml-4">
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Complete biography, personal details, and career milestones with timeline</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Full filmography with role details, release dates, and production information</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>TV series appearances, guest roles, and recurring character information</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Awards, nominations, honors, and industry recognition with ceremony details</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Upcoming projects, current productions, and announced future work</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>High-quality photos, media galleries, interview transcripts, and public appearances</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Collaboration networks showing frequent co-stars and creative partnerships</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Educational background, training, and professional development information</span>
+                    </li>
+                  </ul>
+                </div>
+                <Link href="/people" className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  <FaUser /> Browse Complete Actor Database
+                </Link>
               </div>
             </div>
           </section>
@@ -451,50 +370,18 @@ export default function About() {
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto text-justify">
               Join our community of film enthusiasts accessing the most comprehensive movie and TV series database available online. With thousands of verified entries, real-time updates, and sophisticated discovery tools, LK21 provides everything you need to explore, research, and enjoy the world of cinema.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-4">
               <Link href="/movie/365-days-this-day-2022/stream" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center gap-2">
                 <FaFilm /> Start Exploring Movies
               </Link>
               <Link href="/tv-show/popular" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center gap-2">
                 <FaTv /> Browse TV Series Database
               </Link>
-              <AdsterraSmartLink variant="success" className="px-8 py-4 text-lg">
-                <FaDownload /> Download Premium App
-              </AdsterraSmartLink>
             </div>
             <p className="mt-8 text-gray-400 max-w-3xl mx-auto text-justify">
               <strong>LK21</strong> - Your ultimate resource for movie information, TV series details, actor profiles, streaming guides, and cinematic discovery. Whether you're researching film history, planning your viewing schedule, or simply exploring the vast world of cinema, we provide the comprehensive database, accurate information, and intuitive tools you need to enhance your movie-watching experience and deepen your understanding of film as an art form and cultural phenomenon.
             </p>
           </section>
-        </div>
-      </div>
-      
-      {/* Floating Download Button untuk Mobile */}
-      <div className="fixed bottom-6 right-6 z-40 md:hidden">
-        <AdsterraSmartLink
-          className="shadow-2xl animate-bounce"
-          showConfirmation={false}
-        >
-          <FaDownload className="text-xl" />
-        </AdsterraSmartLink>
-      </div>
-      
-      {/* Floating Banner untuk Desktop */}
-      <div className="fixed bottom-6 left-6 z-40 hidden lg:block">
-        <div className="bg-gradient-to-r from-blue-900/90 to-purple-900/90 text-white p-4 rounded-xl shadow-2xl max-w-xs">
-          <div className="flex items-start gap-3">
-            <div className="text-2xl">📱</div>
-            <div>
-              <h4 className="font-bold mb-1">Mobile App Available</h4>
-              <p className="text-sm text-gray-300 mb-3">Better experience on our app</p>
-              <AdsterraSmartLink variant="success" className="text-sm px-4 py-2">
-                Download Now
-              </AdsterraSmartLink>
-            </div>
-            <button className="text-gray-400 hover:text-white" onClick={(e) => e.target.closest('.fixed').style.display = 'none'}>
-              ✕
-            </button>
-          </div>
         </div>
       </div>
     </div>
