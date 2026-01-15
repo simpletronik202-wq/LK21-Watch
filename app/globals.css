@@ -439,3 +439,43 @@ html {
     display: none !important;
   }
 }
+
+/* Adsterra Styling */
+.adsterra-layout-wrapper {
+  width: 100%;
+}
+
+/* Container alignment dengan navbar */
+.container.mx-auto.px-4 {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Banner styling */
+.adsterra-banner-728x90 iframe,
+.adsterra-banner-300x250 iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Native banner styling */
+[data-adsterra="true"] {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .adsterra-banner-728x90 iframe {
+    width: 100% !important;
+    max-width: 728px;
+    height: 90px !important;
+  }
+  
+  .adsterra-banner-300x250 iframe {
+    width: 300px !important;
+    height: 250px !important;
+  }
+}
