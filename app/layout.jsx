@@ -47,7 +47,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="7WZfh2aCtk9XQObziZk0EbqlvPuYo1qHULjMDlIUw-Y" />
+        <meta name="google-site-verification" content="FDKxUmPZWUKjIGnNRw9xMFqhdUUR9wCX1_qB_YK5asM" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://lk21-watch.vercel.app" />
         
